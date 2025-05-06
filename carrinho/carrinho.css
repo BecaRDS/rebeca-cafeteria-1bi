@@ -1,0 +1,81 @@
+    /* Reset básico */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+  
+      /* Corpo da página */
+      body {
+        font-family: 'Arial', sans-serif;
+        background-color: #f4f4f9;
+        color: #333;
+        padding: 20px;
+        line-height: 1.6;
+      }
+  
+      /* Cabeçalho */
+      header {
+        text-align: center;
+        margin-bottom: 30px;
+      }
+  
+      h2 {
+        font-size: 2.5rem;
+        color: #5f3b32;
+        font-weight: bold;
+        text-transform: uppercase;
+      }
+  
+      /* Estilo para as seções de item no carrinho */
+      #itensCarrinho {
+        background-color: #fff;
+        padding: 20px;
+        margin-bottom: 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        font-size: 1.2rem;
+      }
+  
+      #itensCarrinho p {
+        margin-bottom: 15px;
+      }
+  
+      /* Valor total da compra */
+      #valorTotal {
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #5f3b32;
+        margin-bottom: 20px;
+      }
+  
+      /* Botões */
+      .botao {
+        margin: 10px;
+        padding: 12px 30px;
+        background-color: #6f4f29; /* Cor marrom claro */
+        color: white;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s ease;
+      }
+  
+      .botao:hover {
+        background-color: #8b4513; /* Cor marrom escuro */
+        transform: scale(1.05);
+      }
+  
+      .botao:focus {
+        outline: none;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+      }
+  
+      /* Rodapé */
+      footer {
+        text-align: center;
+        margin-top: 50px;
+        color: #888;
+        font-size: 0.9rem;
+      }

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pagamento - Cafeteria</title>
+
+  <link rel="stylesheet" href="./pagamento.css">
+
+</head>
+<body>
+  <header>
+    <h2>Pagamento</h2>
+  </header>
+  <main>
+    <section id="resumoPagamento"></section>
+    <label for="formaPagamento">Forma de pagamento:</label><br>
+    <select id="formaPagamento">
+      <option>Pix</option>
+      <option>Cartão de Crédito</option>
+      <option>Dinheiro</option>
+    </select>
+    <div>
+      <button class="botao" onclick="finalizarCompra()">Finalizar</button>
+      <button class="botao" onclick="location.href='../Inicio.html'">Voltar</button>
+    </div>
+  </main>
+  <footer>
+    <p>&copy; 2025 Cafeteria</p>
+  </footer>
+
+  <script src="./pagamento.js"></script>
+
+</body>
+</html>
