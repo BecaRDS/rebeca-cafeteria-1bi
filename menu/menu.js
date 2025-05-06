@@ -18,13 +18,21 @@ const cafes = [
 
 function adicionarCarrinho(item, preco) {
   let carrinho = JSON.parse(localStorage.getItem('carrinho')) || {};
-  if (!carrinho[item]) carrinho[item] = { quantidade: 0, preco };
+
+  if (!carrinho[item]) {
+    carrinho[item] = { quantidade: 0, preco };
+  }
+
   carrinho[item].quantidade++;
+
   localStorage.setItem('carrinho', JSON.stringify(carrinho));
+
   let total = Object.values(carrinho).reduce((sum, i) => sum + i.quantidade, 0);
   localStorage.setItem('quantidadeTotal', total);
-  alert(item + ' adicionado ao carrinho!');
+
+  alert(`${item} adicionado ao carrinho! Agora você tem ${carrinho[item].quantidade} unidade(s) desse item.`);
 }
+
 
 window.onload = () => {
   const container = document.getElementById('menu-container');

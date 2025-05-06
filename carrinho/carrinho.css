@@ -1,81 +1,70 @@
-    /* Reset básico */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-  
-      /* Corpo da página */
-      body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        padding: 20px;
-        line-height: 1.6;
-      }
-  
-      /* Cabeçalho */
-      header {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-  
-      h2 {
-        font-size: 2.5rem;
-        color: #5f3b32;
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-  
-      /* Estilo para as seções de item no carrinho */
-      #itensCarrinho {
-        background-color: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        font-size: 1.2rem;
-      }
-  
-      #itensCarrinho p {
-        margin-bottom: 15px;
-      }
-  
-      /* Valor total da compra */
-      #valorTotal {
-        font-size: 1.5rem;
-        font-weight: bold;
-        color: #5f3b32;
-        margin-bottom: 20px;
-      }
-  
-      /* Botões */
-      .botao {
-        margin: 10px;
-        padding: 12px 30px;
-        background-color: #6f4f29; /* Cor marrom claro */
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.1rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-      }
-  
-      .botao:hover {
-        background-color: #8b4513; /* Cor marrom escuro */
-        transform: scale(1.05);
-      }
-  
-      .botao:focus {
-        outline: none;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
-  
-      /* Rodapé */
-      footer {
-        text-align: center;
-        margin-top: 50px;
-        color: #888;
-        font-size: 0.9rem;
-      }
+/* Itens do carrinho */
+.item-carrinho {
+  background-color: #f9f4f0;
+  border: 1px solid #d8c1b1;
+  border-left: 6px solid #a9745b;
+  border-radius: 10px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px rgba(90, 60, 45, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.item-carrinho:hover {
+  transform: translateY(-2px);
+}
+
+/* Textos dos itens */
+.item-carrinho span {
+  display: block;
+  color: #5f3b32;
+  font-size: 1.1rem;
+  margin-bottom: 6px;
+}
+
+/* Quantidade */
+.item-carrinho label {
+  display: flex;
+  align-items: center;
+  font-weight: bold;
+  color: #4e2e23;
+  margin-top: 8px;
+}
+
+/* Input de quantidade */
+.item-carrinho input[type="number"] {
+  width: 70px;
+  padding: 6px 10px;
+  margin-left: 10px;
+  font-size: 1rem;
+  border: 1px solid #b89b87;
+  border-radius: 6px;
+  background-color: #fffaf7;
+  color: #5f3b32;
+  transition: border-color 0.3s ease;
+}
+
+.item-carrinho input[type="number"]:focus {
+  outline: none;
+  border-color: #a9745b;
+  box-shadow: 0 0 6px rgba(169, 116, 91, 0.3);
+}
+
+/* Texto "Valor total da compra" */
+#valorTotal {
+  font-size: 1.6rem;
+  font-weight: bold;
+  color: #5f3b32;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Mensagem de carrinho vazio */
+#itensCarrinho p {
+  font-size: 1.3rem;
+  color: #a9745b;
+  text-align: center;
+  padding: 20px;
+  background-color: #fff2e6;
+  border-radius: 10px;
+}
