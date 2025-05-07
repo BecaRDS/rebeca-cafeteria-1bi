@@ -1,3 +1,5 @@
+/* menu.css */
+
 * {
   margin: 0;
   padding: 0;
@@ -5,84 +7,128 @@
 }
 
 body {
-  font-family: 'Arial', sans-serif;
-  background-color: #f4f4f9;
-  color: #333;
-  padding: 20px;
-  line-height: 1.6;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f5f1;
+  color: #3e2723;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
 
 header {
+  background-color: #5d4037;
+  padding: 25px 20px;
   text-align: center;
-  margin-bottom: 30px;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h2 {
-  font-size: 2.5rem;
-  color: #5f3b32;
-  font-weight: bold;
-  text-transform: uppercase;
+header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+main#menu-container {
+  flex: 1;
+  padding: 30px 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 20px;
 }
 
 .menu-item {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #fff;
-  margin: 15px 0;
-  padding: 20px;
+  background-color: #efebe9;
+  border: 1px solid #d7ccc8;
+  border-left: 5px solid #8d6e63;
   border-radius: 8px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-shadow: 0 1px 6px rgba(0, 0, 0, 0.08);
+  transition: transform 0.2s ease;
+}
+
+.menu-item:hover {
+  transform: translateY(-4px);
 }
 
 .menu-item img {
-  width: 80px;
-  height: 80px;
+  width: 100%;
+  height: 180px;
   object-fit: cover;
-  border-radius: 5px;
-  margin-right: 20px;
-}
-
-.menu-item div {
-  flex-grow: 1;
+  border-radius: 6px;
+  margin-bottom: 12px;
 }
 
 .menu-item h3 {
-  font-size: 1.5rem;
-  color: #5f3b32;
-  margin-bottom: 10px;
+  font-size: 1.2rem;
+  margin-bottom: 6px;
+  color: #4e342e;
 }
 
 .menu-item p {
-  font-size: 1rem;
-  color: #666;
-  margin-bottom: 15px;
+  font-size: 0.95rem;
+  margin-bottom: 8px;
+  color: #5d4037;
 }
 
 .botao {
-  padding: 10px 20px;
-  background-color: #6f4f29;
+  background-color: #795548;
   color: white;
   border: none;
-  border-radius: 5px;
-  font-size: 1.1rem;
+  padding: 10px 16px;
+  margin-top: auto;
+  border-radius: 6px;
+  font-size: 0.95rem;
   cursor: pointer;
   transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.12);
 }
 
 .botao:hover {
-  background-color: #8b4513;
-  transform: scale(1.05);
-}
-
-.botao:focus {
-  outline: none;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #6d4c41;
+  transform: translateY(-1px);
 }
 
 footer {
+  background-color: #5d4037;
   text-align: center;
-  margin-top: 50px;
-  color: #888;
+  padding: 15px;
+  color: #fff;
   font-size: 0.9rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
 }
+
+.barra-inferior {
+  position: fixed;
+  bottom: 20px;
+  right: 15px;
+  background-color: #3e2723;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  z-index: 1000;
+}
+
+.barra-inferior button {
+  background-color: #6a4a40;
+  color: #4b2119;
+  border: none;
+  padding: 5px 5px;
+  font-size: 0.95rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  min-width: 60px; /*largura dos ícone*/
+}
+
+.barra-inferior button:hover {
+  background-color: #8c665b;
+}
+

@@ -1,70 +1,101 @@
-/* Itens do carrinho */
+/* carrinho.css */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f5f1;
+  color: #3e2723;
+  flex-direction: row;
+  min-height: 10vh;
+}
+
+header {
+  background-color: #5d4037;
+  padding: 25px 20px;
+  text-align: center;
+  color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h2 {
+  font-size: 2rem;
+  font-weight: 600;
+}
+
+main {
+  flex: 1;
+  padding: 30px 20px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+footer {
+  background-color: #5d4037;
+  text-align: center;
+  padding: 15px;
+  color: #fff;
+  font-size: 0.9rem;
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+}
+
 .item-carrinho {
-  background-color: #f9f4f0;
-  border: 1px solid #d8c1b1;
-  border-left: 6px solid #a9745b;
-  border-radius: 10px;
-  padding: 15px 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 8px rgba(90, 60, 45, 0.1);
-  transition: transform 0.2s ease;
-}
-
-.item-carrinho:hover {
-  transform: translateY(-2px);
-}
-
-/* Textos dos itens */
-.item-carrinho span {
-  display: block;
-  color: #5f3b32;
-  font-size: 1.1rem;
-  margin-bottom: 6px;
-}
-
-/* Quantidade */
-.item-carrinho label {
-  display: flex;
-  align-items: center;
-  font-weight: bold;
-  color: #4e2e23;
-  margin-top: 8px;
-}
-
-/* Input de quantidade */
-.item-carrinho input[type="number"] {
-  width: 70px;
-  padding: 6px 10px;
-  margin-left: 10px;
-  font-size: 1rem;
-  border: 1px solid #b89b87;
-  border-radius: 6px;
-  background-color: #fffaf7;
-  color: #5f3b32;
-  transition: border-color 0.3s ease;
-}
-
-.item-carrinho input[type="number"]:focus {
-  outline: none;
-  border-color: #a9745b;
-  box-shadow: 0 0 6px rgba(169, 116, 91, 0.3);
-}
-
-/* Texto "Valor total da compra" */
-#valorTotal {
-  font-size: 1.6rem;
-  font-weight: bold;
-  color: #5f3b32;
-  margin-bottom: 30px;
-  text-align: center;
-}
-
-/* Mensagem de carrinho vazio */
-#itensCarrinho p {
-  font-size: 1.3rem;
-  color: #a9745b;
-  text-align: center;
+  background-color: #d2c0b7;
+  border: 1px solid #d7ccc8;
+  border-left: 10px solid #8d6e63;
   padding: 20px;
-  background-color: #fff2e6;
-  border-radius: 10px;
+  margin-bottom: 20px;
+  border-radius: 6px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.06);
+}
+
+.item-carrinho span,
+.item-carrinho label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.item-carrinho strong {
+  font-size: 1.1rem;
+  color: #4e342e;
+}
+
+input[type="number"] {
+  width: 70px;
+  padding: 6px;
+  border: 1px solid #bcaaa4;
+  border-radius: 4px;
+  background-color: #927165cd;
+  color: #3e2723;
+}
+
+#valorTotal {
+  font-size: 1.2rem;
+  font-weight: 500;
+  color: #4e342e;
+  margin-top: 25px;
+}
+
+.botao {
+  background-color: #795548;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  margin-top: 20px;
+  margin-right: 10px;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  box-shadow: 0 6px 5px rgba(0, 0, 0, 0.15);
+}
+
+.botao:hover {
+  background-color: #6d4c41;
+  transform: translateY(-1px);
 }

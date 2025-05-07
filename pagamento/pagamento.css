@@ -1,98 +1,110 @@
-    /* Reset básico */
-    * {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-      }
-  
-      /* Corpo da página */
-      body {
-        font-family: 'Arial', sans-serif;
-        background-color: #f4f4f9;
-        color: #333;
-        padding: 20px;
-        line-height: 1.6;
-      }
-  
-      /* Cabeçalho */
-      header {
-        text-align: center;
-        margin-bottom: 30px;
-      }
-  
-      h2 {
-        font-size: 2.5rem;
-        color: #5f3b32;
-        font-weight: bold;
-        text-transform: uppercase;
-      }
-  
-      /* Seção resumo de pagamento */
-      #resumoPagamento {
-        background-color: #fff;
-        padding: 20px;
-        margin-bottom: 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-        font-size: 1.5rem;
-        color: #5f3b32;
-        font-weight: bold;
-      }
-  
-      /* Seleção de forma de pagamento */
-      label {
-        font-size: 1.1rem;
-        color: #333;
-        margin-bottom: 8px;
-        display: inline-block;
-      }
-  
-      select {
-        padding: 10px;
-        margin: 10px 0;
-        width: 100%;
-        max-width: 300px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        font-size: 1.1rem;
-        background-color: #fff;
-        color: #333;
-      }
-  
-      select:focus {
-        border-color: #6f4f29;
-        outline: none;
-        box-shadow: 0 0 5px rgba(111, 79, 41, 0.5);
-      }
-  
-      /* Botões */
-      .botao {
-        margin: 10px;
-        padding: 12px 30px;
-        background-color: #6f4f29; /* Cor marrom claro */
-        color: white;
-        border: none;
-        border-radius: 5px;
-        font-size: 1.1rem;
-        cursor: pointer;
-        transition: background-color 0.3s ease, transform 0.2s ease;
-      }
-  
-      .botao:hover {
-        background-color: #8b4513; /* Cor marrom escuro */
-        transform: scale(1.05);
-      }
-  
-      .botao:focus {
-        outline: none;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-      }
-  
-      /* Rodapé */
-      footer {
-        text-align: center;
-        margin-top: 50px;
-        color: #888;
-        font-size: 0.9rem;
-      }
-  
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Corpo da página */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f9f5f1;
+  color: #3e2723;
+  padding: 20px;
+  line-height: 1;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Cabeçalho */
+header {
+  text-align: center;
+  margin-bottom: 30px;
+  background-color: #5d4037;
+  padding: 25px 20px;
+  color: white;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Resumo de pagamento */
+#resumoPagamento {
+  background-color: #efebe9;
+  padding: 20px;
+  margin-bottom: 25px;
+  border-left: 10px solid #8d6e63;
+  border-radius: 8px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+  font-size: 1.4rem;
+  color: #4e342e;
+  font-weight: bold;
+}
+
+/* Seção de seleção */
+label {
+  font-size: 1.1rem;
+  color: #5d4037;
+  margin-bottom: 8px;
+  display: inline-block;
+}
+
+select {
+  padding: 12px;
+  margin: 12px 0;
+  width: 100%;
+  max-width: 320px;
+  border: 1px solid #bcaaa4;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #988276ae;
+  color: #3e2723;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+select:focus {
+  border-color: #6f4f29;
+  outline: none;
+  box-shadow: 0 0 5px rgba(111, 79, 41, 0.4);
+}
+
+/* Botões */
+.botao {
+  margin: 10px 10px 0 0;
+  padding: 12px 30px;
+  background-color: #795548;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 1.05rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.botao:hover {
+  background-color: #6d4c41;
+  transform: scale(1.04);
+}
+
+.botao:focus {
+  outline: none;
+  box-shadow: 0 0 10px rgba(111, 79, 41, 0.4);
+}
+
+/* Rodapé */
+footer {
+  text-align: center;
+  margin-top: auto;
+  padding: 20px;
+  color: #a1887f;
+  font-size: 0.9rem;
+  background-color: #efebe9;
+  border-top: 1px solid #d7ccc8;
+}

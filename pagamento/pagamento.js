@@ -9,5 +9,5 @@ function finalizarCompra() {
   alert('Compra finalizada com sucesso!');
   localStorage.removeItem('carrinho');
   localStorage.setItem('quantidadeTotal', 0);
-  location.href = '../Inicio.html';
+  location.href = '../menu/menu.html';
 }
