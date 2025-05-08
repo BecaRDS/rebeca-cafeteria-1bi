@@ -6,30 +6,36 @@
   <title>Pagamento - Cafeteria</title>
 
   <link rel="stylesheet" href="./pagamento.css">
-
 </head>
 <body>
   <header>
-    <h2>Pagamento 💸</h2>
+    <h2>Pagamento</h2>
   </header>
   <main>
     <section id="resumoPagamento"></section>
-    <label for="formaPagamento">Forma de pagamento:</label><br>
-    <select id="formaPagamento">
+    <label for="formaPagamento">Forma de pagamento:</label><br />
+    <select id="formaPagamento" onchange="verificarPagamento()">
+      <option disabled selected>Escolha sua forma de pagamento</option>
       <option>Pix</option>
       <option>Cartão de Crédito</option>
       <option>Dinheiro</option>
     </select>
+    
     <div>
       <button class="botao" onclick="finalizarCompra()">Finalizar</button>
       <button class="botao" onclick="location.href='../menu/menu.html'">Voltar</button>
     </div>
+    <!-- Tag <section> usada para exibir a área do QR Code do PIX -->
+    <section id="qrcode-area" class="qrcode-area" style="display: none;"> 
+      <h2>Escaneie o QR Code para pagar com PIX</h2> <!-- Subtítulo explicando a ação necessária -->
+      <div id="qrcode"></div> <!-- Elemento onde o QR Code será renderizado via JavaScript -->
+    </section>
   </main>
   <footer>
     <p>&copy; 2025 Cafeteria</p>
   </footer>
-
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
   <script src="./pagamento.js"></script>
-
+  
 </body>
 </html>
