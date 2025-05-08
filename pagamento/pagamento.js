@@ -90,8 +90,11 @@ function pagarPIX() {
 }
 
 function finalizarCompra() {
-  alert("Compra finalizada com sucesso!");
+  alert("Compra finalizada com sucesso! Obrigado pela preferência 😊");
   localStorage.removeItem("carrinho");
-  localStorage.removeItem("valorTotal");
-  location.href='../menu/menu.html';
+  // Limpa o valor armazenado
+  localStorage.removeItem('valorTotal');
+
+  // Redireciona para o menu
+  window.location.href = '../menu/menu.html';
 }
